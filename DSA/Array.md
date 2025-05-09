@@ -1,0 +1,2 @@
+# Arrays - Data structure
+[ , , , ] -> vector
