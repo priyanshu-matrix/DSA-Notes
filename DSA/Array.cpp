@@ -12,7 +12,6 @@ int main() {
     for (int i = 0; i < x; i++)
     {
         cout << arr[i] << " ";
-    }
     cout << "\n";
     return 0;
 }
