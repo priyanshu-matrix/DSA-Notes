@@ -37,6 +37,22 @@ public:
         }
         cout << endl;
     }
+    
+    void reverse(){ // function to reverse the linked list we will se this later i just made it to practice
+        node* prev = nullptr;
+        node* current = head;
+        node* next = nullptr;
+        while (current) {
+            // Store next
+            next = current->next;
+            // Reverse current node's pointer
+            current->next = prev;
+            // Move pointers one position ahead.
+            prev = current;
+            current = next;
+        }
+        head = prev;
+    }
 };
 int main() {
 ios::sync_with_stdio(0);
@@ -46,6 +62,14 @@ cout.tie(0);
     obj.add(5);
     obj.add(2);
     obj.add(3);
+    obj.reverse();
     obj.display();
     return 0;
 }
+
+
+/* 
+    It's useful as in linkedlist we dont have to allocate memory before hand and we can increase and store the 
+    information on the go so it enhances the memory management as in array we have to allocate sum space before
+    hand but here it creates it dynamically. So yaa it's effecient thats why it's used to save resources.
+*/
