@@ -70,6 +70,6 @@ cout.tie(0);
 
 /* 
     It's useful as in linkedlist we dont have to allocate memory before hand and we can increase and store the 
-    information on the go so it enhances the memory management as in array we have to allocate sum space before
+    information on the go so it enhances the memory management as in array we have to allocate some space before
     hand but here it creates it dynamically. So yaa it's effecient thats why it's used to save resources.
 */
