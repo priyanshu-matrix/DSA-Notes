@@ -53,6 +53,27 @@ public:
         }
         head = prev;
     }
+    void sort(){ // Bubble sort algo for sorting we can also do quick sort but that will be tedious
+        if (!head || !head->next) return; // if empty or single element list
+
+        bool swapped;
+        node* ptr1;
+        node* lptr = nullptr;
+
+        do {
+            swapped = false;
+            ptr1 = head;
+
+            while (ptr1->next != lptr) {
+                if (ptr1->data > ptr1->next->data) {
+                    swap(ptr1->data, ptr1->next->data);
+                    swapped = true;
+                }
+                ptr1 = ptr1->next;
+            }
+            lptr = ptr1;
+        } while (swapped);
+    }
 };
 int main() {
 ios::sync_with_stdio(0);
@@ -62,7 +83,6 @@ cout.tie(0);
     obj.add(5);
     obj.add(2);
     obj.add(3);
-    obj.reverse();
     obj.display();
     return 0;
 }
