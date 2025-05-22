@@ -1,5 +1,5 @@
 # Data Structure & Algo
-## Main difference betweem C / C++
+## Main difference between C / C++
 
 > C is POP (Procedural Oriented Programming)
 > While C++ is OOP (Object Oriented Programming)
